@@ -1,0 +1,45 @@
+﻿<Window x:Class="SimpleWPFWizard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleWPFWizard"
+        xmlns:mvvmc="clr-namespace:MVVMC;assembly=MVVMC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Background="LightCyan"></Border>
+        <mvvmc:Region Grid.Column="1" ControllerID="Wizard"></mvvmc:Region>
+        <Border Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Background="LightGray">
+            <StackPanel HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Button Margin="5"
+                        VerticalAlignment="Center"
+                        Padding="5"
+                        Command="{mvvmc:GoBackCommand ControllerID=Wizard}">
+                    Back
+                </Button>
+                <Button Margin="5"
+                        VerticalAlignment="Center"
+                        Padding="5"
+                        Command="{mvvmc:NavigateCommand Action=Next, ControllerID=Wizard}">
+                    Next
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
