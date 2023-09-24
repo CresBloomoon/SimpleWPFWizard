@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWPFWizard", "SimpleWPFWizard\SimpleWPFWizard.csproj", "{D9AE7D29-8F14-4D1C-BE0F-4E82AB0C23F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMC", "MVVMC\MVVMC.csproj", "{30547B8A-DD4F-4AD7-B3BD-C1D95C8F561A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D9AE7D29-8F14-4D1C-BE0F-4E82AB0C23F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9AE7D29-8F14-4D1C-BE0F-4E82AB0C23F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9AE7D29-8F14-4D1C-BE0F-4E82AB0C23F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30547B8A-DD4F-4AD7-B3BD-C1D95C8F561A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30547B8A-DD4F-4AD7-B3BD-C1D95C8F561A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30547B8A-DD4F-4AD7-B3BD-C1D95C8F561A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30547B8A-DD4F-4AD7-B3BD-C1D95C8F561A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
