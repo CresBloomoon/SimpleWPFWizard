@@ -77,6 +77,8 @@ namespace MVVMC
                 t => controllerNamespaces.Contains(t.Namespace) &&
                 t.Name.EndsWith("View", StringComparison.InvariantCultureIgnoreCase)).ToList();
 
+            _dispatcher = Dispatcher.CurrentDispatcher;
+
         }
 
         /// <summary>
